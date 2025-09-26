@@ -1,0 +1,58 @@
+@font-face {
+  font-family: "Amoresa";
+  src: url("/../assets/fonts/Amoresa.ttf") format("truetype"),
+    url("/assets/fonts/amoresa-webfont.woff") format("woff"),
+    url ("/assets/fonts/amoresa-webfont.woff2") woff("woff2");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("../assets/img/background1.jpg");
+}
+
+h1 {
+  
+}
+
+.main {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.main::before{
+    height: 100%
+    width: 100%;
+    top:0;
+    left:0;
+    background-color: black;
+
+}
+
+.logo{font-size: 10rem;
+  color: #043066;
+}
+
+.logo .amoresa {
+    font-family: "Amoresa";
+  
+}
+
+/*
+
+title not end 
+
+meta close
+
+close h1
+ image close
+ p close 
+ a bracket
+
+*/
