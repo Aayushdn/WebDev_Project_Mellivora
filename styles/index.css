@@ -1,8 +1,8 @@
 @font-face {
   font-family: "Amoresa";
-  src: url("/../assets/fonts/Amoresa.ttf") format("truetype"),
-    url("/assets/fonts/amoresa-webfont.woff") format("woff"),
-    url ("/assets/fonts/amoresa-webfont.woff2") woff("woff2");
+  src: url("../assets/fonts/Amoresa.ttf") format("truetype"),
+    url("../assets/fonts/amoresa-webfont.woff") format("woff"),
+    url ("../assets/fonts/amoresa-webfont.woff2") woff("woff2");
 }
 
 * {
