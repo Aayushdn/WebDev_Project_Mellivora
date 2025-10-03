@@ -5,6 +5,13 @@
     url ("../assets/fonts/amoresa-webfont.woff2") woff("woff2");
 }
 
+@font-face {
+  font-family: "Perandory";
+  src: url("../assets/fonts/Perandory-Semi-Condensed.otf") format("opentype");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -12,36 +19,68 @@
 }
 
 body {
-  background: url("../assets/img/background1.jpg");
+  background: #f4a261;
+  font-family: "Inter";
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
-h1 {
-  
+.page {
+  height: 100vh;
 }
 
 .main {
+  background: url("../assets/img/background1.jpg") no-repeat center center;
   display: flex;
-  height: 100vh;
   justify-content: center;
   align-items: center;
+  margin-bottom: 10px;
 }
 
-.main::before{
-    height: 100%
-    width: 100%;
-    top:0;
-    left:0;
-    background-color: black;
-
-}
-
-.logo{font-size: 10rem;
+/* .logo {
+  font-size: 10rem;
   color: #043066;
+  font-family: "Perandory";
+  position: relative;
+  height: 50vh;
+  width: 50%;
 }
 
-.logo .amoresa {
-    font-family: "Amoresa";
-  
+.top,
+.bottom {
+  position: absolute;
+}
+
+.top {
+  top: 0;
+  left: 0;
+}
+
+.bottom {
+  bottom: -10%;
+  right: 1%;
+} */
+
+.logo {
+  font-size: 10rem;
+  color: #043066;
+  font-family: "Perandory";
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.logo .top {
+}
+
+.logo .bottom {
+  direction: rtl;
+  margin-top: -180px;
+  margin-right: 100px;
+}
+
+.logo span .amoresa {
+  font-family: "Amoresa";
 }
 
 /*
