@@ -50,12 +50,74 @@ nav.navBar {
   position: relative;
   padding: 40px 0;
 }
+.title {
+  margin: 0 auto 30px auto;
+  text-align: center;
+}
+
+.aboutInfo {
+  padding: 20px 250px;
+  display: flex;
+  justify-content: center;
+}
+
+.aboutInfo .left {
+  /* padding: 0 50px; */
+  border-right: 2px solid rgba(178, 174, 174, 1);
+  flex: 1;
+}
+
+.aboutInfo .right {
+  /* padding: 40px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.aboutText {
+  box-shadow: 5px 5px 5px 1px gray;
+  width: 60%;
+  padding: 20px;
+  background: white;
+  border-radius: 20px;
+}
+
+.aboutImage {
+  width: 350px;
+  /* height: 400px; */
+  /* transform: rotate(-5deg); */
+  /* border: 1px solid gray; */
+  /* padding: 20px; */
+  /* border-radius: 50%; */
+}
 
 svg#waveBG {
   /* display: inline-block; */
   position: absolute;
   bottom: 0;
   left: 0;
+}
+
+.ourTeam {
+  background: #3f3d56;
+  color: white;
+  text-align: center;
+}
+
+ourTeam h1 {
+  margin: 20px;
+}
+
+.teamBox {
+  margin: 40px auto;
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+}
+
+.teamMember img {
+  width: 200px;
 }
 
 .cta {

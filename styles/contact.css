@@ -5,3 +5,54 @@
 }
 
 // TODO: seperate contact styles from about styles
+
+.cta {
+  align-content: center;
+  text-align: center;
+}
+
+.cta a {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+}
+
+.ctaBtn {
+  padding: 20px 30px;
+}
+
+.contact {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.contact h1 {
+  margin: 20px auto;
+}
+
+.formGroup {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup input {
+  padding: 10px 30px 10px 5px;
+  outline: none;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+.formGroup #message {
+  padding: 20px 20px 20px 10px;
+  border-radius: 10px;
+}
+
+.formBtn {
+  padding: 10px 30px;
+  margin-left: 10px;
+  border-radius: 10px;
+  background-color: #3f3d56;
+  color: white;
+  cursor: pointer;
+}
