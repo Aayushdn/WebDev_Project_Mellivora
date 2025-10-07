@@ -19,7 +19,7 @@
 }
 
 body {
-  background: #f4a261;
+  background: #24c18d;
   font-family: "Inter";
   max-width: 1600px;
   margin: 0 auto;
@@ -31,67 +31,82 @@ body {
 
 .main {
   background: url("../assets/img/background1.jpg") no-repeat center center;
+  color: white;
+  margin-bottom: 10px;
+  position: relative;
+  padding: 40px 0;
+}
+
+nav.navBar {
+  position: relative;
+  z-index: 1;
+  font-size: 1.2rem;
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.navItems {
+  padding: 20px 40px;
+}
+
+.navItems a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.navItems a:hover {
+  color: Rebeccapurple;
+  cursor: pointer;
+}
+
+.content {
+  position: relative;
+  height: 100%;
+  width: 100x %;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.titleSection {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10px;
+  flex-direction: column;
 }
 
-/* .logo {
-  font-size: 10rem;
-  color: #043066;
+.nameTitle {
+  font-size: 5rem;
   font-family: "Perandory";
-  position: relative;
-  height: 50vh;
-  width: 50%;
 }
 
-.top,
-.bottom {
-  position: absolute;
+.tagline {
+  font-size: 1.8rem;
+  color: ;
 }
 
-.top {
+.main .overlay {
+  z-index: 0;
   top: 0;
   left: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgb(0, 0, 0, 0.4);
 }
 
-.bottom {
-  bottom: -10%;
-  right: 1%;
-} */
-
-.logo {
-  font-size: 10rem;
-  color: #043066;
-  font-family: "Perandory";
-  display: flex;
-  flex-direction: column;
-  width: 50%;
+.cta {
+  align-content: center;
+  text-align: center;
 }
 
-.logo .top {
+.ctaBtn {
+  padding: 20px 30px;
 }
-
-.logo .bottom {
-  direction: rtl;
-  margin-top: -180px;
-  margin-right: 100px;
-}
-
-.logo span .amoresa {
-  font-family: "Amoresa";
-}
-
-/*
-
-title not end 
-
-meta close
-
-close h1
- image close
- p close 
- a bracket
-
-*/
