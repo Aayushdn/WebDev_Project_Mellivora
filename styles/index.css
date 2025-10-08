@@ -19,7 +19,7 @@
 }
 
 body {
-  background: #24c18d;
+  background: white;
   font-family: "Inter";
   max-width: 1600px;
   margin: 0 auto;
@@ -109,4 +109,65 @@ nav.navBar {
 
 .ctaBtn {
   padding: 20px 30px;
+}
+
+.stories {
+  padding: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.stories h1 {
+  font-family: "Perandory";
+}
+
+.stories h1 span {
+  color: #24c18d;
+}
+
+.imageBox img {
+  width: 100px;
+
+  height: 100px;
+  clip-path: circle(40%);
+}
+
+.story {
+  text-align: left;
+  padding: 10px;
+  color: #747474;
+}
+
+.storyBox {
+  position: relative;
+  width: 60%;
+  padding: 50px;
+  border: 1px solid #bb8141;
+}
+
+.storyBox.left {
+  box-shadow: 30px 10px 0 #24c18d;
+}
+
+.storyBox.right {
+  box-shadow: -30px 10px 0 #24c18d;
+}
+
+.story.right {
+  text-align: right;
+}
+
+.imageBox.left {
+  position: absolute;
+  bottom: -30px;
+  left: -30px;
+}
+
+.imageBox.right {
+  position: absolute;
+  bottom: -30px;
+  right: -30px;
 }
