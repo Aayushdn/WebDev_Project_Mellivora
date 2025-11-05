@@ -99,7 +99,7 @@ nav.navBar {
   position: absolute;
   height: 100%;
   width: 100%;
-  background: rgb(0, 0, 0, 0.4);
+  background: rgb(0, 0, 0, 0.0);
 }
 
 .cta {
@@ -108,7 +108,7 @@ nav.navBar {
 }
 
 .ctaBtn {
-  padding: 20px 30px;
+  padding: 21px 31px;
 }
 
 .stories {
