@@ -1,0 +1,128 @@
+@import url("./index.css");
+
+body {
+  background: white;
+  font-family: "Inter";
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.main {
+  background: url("../assets/img/background1.jpg") no-repeat center center;
+  color: white;
+  margin-bottom: 10px;
+  position: relative;
+  padding: 40px 0;
+}
+
+.content {
+  position: relative;
+  height: 100%;
+  width: 100x %;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.titleSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.nameTitle {
+  font-size: 5rem;
+  font-family: "Perandory";
+}
+
+.tagline {
+  font-size: 1.8rem;
+  color: ;
+}
+
+.main .overlay {
+  z-index: 0;
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgb(0, 0, 0, 0.4);
+}
+
+.cta {
+  align-content: center;
+  text-align: center;
+}
+
+.ctaBtn {
+  padding: 20px 30px;
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: url("../assets/img/snowflake.png") auto;
+  outline: 1px solid white;
+}
+
+.stories {
+  padding: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.stories h1 {
+  font-family: "Perandory";
+}
+
+.stories h1 span {
+  color: #24c18d;
+}
+
+.imageBox img {
+  width: 100px;
+
+  height: 100px;
+  clip-path: circle(40%);
+}
+
+.story {
+  text-align: left;
+  padding: 10px;
+  color: #747474;
+}
+
+.storyBox {
+  position: relative;
+  width: 60%;
+  padding: 50px;
+  border: 1px solid #bb8141;
+}
+
+.storyBox.left {
+  box-shadow: 30px 10px 0 #24c18d;
+}
+
+.storyBox.right {
+  box-shadow: -30px 10px 0 #24c18d;
+}
+
+.story.right {
+  text-align: right;
+}
+
+.imageBox.left {
+  position: absolute;
+  bottom: -30px;
+  left: -30px;
+}
+
+.imageBox.right {
+  position: absolute;
+  bottom: -30px;
+  right: -30px;
+}

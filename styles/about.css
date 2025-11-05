@@ -1,10 +1,5 @@
+@import url("./index.css");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  boz-sizing: border-box;
-}
 
 body {
   font-family: "Open Sans";
@@ -13,37 +8,13 @@ body {
   margin: 0 auto;
 }
 
-nav.navBar {
-  position: relative;
-  z-index: 1;
-  font-size: 1.2rem;
-  margin: 0 0 50px 0;
-}
-
-.navList {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  text-transform: uppercase;
-}
-
-.navItems {
-  padding: 20px 40px;
-}
-
 .navItems a {
   color: black;
-  text-decoration: none;
-  cursor: pointer;
 }
 
 .navItems a:hover {
   color: Rebeccapurple;
   cursor: pointer;
-}
-
-.page {
-  height: 100vh;
 }
 
 .main {
@@ -95,13 +66,6 @@ nav.navBar {
   /* border-radius: 50%; */
 }
 
-svg#waveBG {
-  /* display: inline-block; */
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-
 .ourTeam {
   background: #3f3d56;
   color: white;
@@ -145,31 +109,4 @@ ourTeam h1 {
 
 .contact h1 {
   margin: 20px auto;
-}
-
-.formGroup {
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-}
-
-.formGroup input {
-  padding: 10px 30px 10px 5px;
-  outline: none;
-  border: 1px solid gray;
-  border-radius: 10px;
-}
-
-.formGroup #message {
-  padding: 20px 20px 20px 10px;
-  border-radius: 10px;
-}
-
-.formBtn {
-  padding: 10px 30px;
-  margin-left: 10px;
-  border-radius: 10px;
-  background-color: #3f3d56;
-  color: white;
-  cursor: pointer;
 }
