@@ -22,16 +22,19 @@ body {
   background: white;
   max-width: 1600px;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 .page {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 nav.navBar {
   position: relative;
+  width: 100%;
   z-index: 1;
   font-size: 1.2rem;
+  /* outline: 1px solid #f00 !important; */ // debugging purpose only
 }
 
 .navList {
@@ -39,10 +42,12 @@ nav.navBar {
   display: flex;
   justify-content: center;
   text-transform: uppercase;
+  gap: 40px;
 }
 
 .navItems {
-  padding: 20px 40px;
+  padding: 20px 0;
+  /* outline: 1px solid #f00 !important; */ // debugging purpose only
 }
 
 .navItems a {
@@ -59,6 +64,7 @@ nav.navBar {
 svg#waveBG {
   /* display: inline-block; */
   position: absolute;
+
   bottom: 0;
   left: 0;
 }
