@@ -1,0 +1,104 @@
+@import "./index.css";
+
+body {
+  width: 100%;
+}
+
+.navBar a {
+  color: black;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  /* height: auto; */
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.box {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: all 0.3s ease-in;
+}
+
+.box a {
+  text-decoration: none;
+}
+
+#destination1 {
+  background: url("../assets/img/destinationImage/destination1.jpg") center
+    center;
+  background-size: cover;
+}
+#destination2 {
+  background: url("../assets/img/destinationImage/destination2.jpg") center
+    center;
+  background-size: cover;
+}
+#destination3 {
+  background: url("../assets/img/destinationImage/destination3.jpg") center
+    center;
+  background-size: cover;
+}
+#destination4 {
+  background: url("../assets/img/destinationImage/destination4.jpg") center
+    center;
+  background-size: cover;
+}
+#destination5 {
+  background: url("../assets/img/destinationImage/destination5.jpg") center
+    center;
+  background-size: cover;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  cursor: pointer;
+}
+
+.overlay.hidden {
+  /* height: 0; */
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(0px);
+}
+
+.content {
+  position: relative;
+  color: white;
+}
+
+.box .content {
+  z-index: 2;
+}
+
+@media (min-width: 1300px) {
+  .container {
+    min-height: 100vh;
+    flex-direction: row;
+  }
+
+  .box {
+    height: auto;
+  }
+
+  .content {
+    writing-mode: vertical-rl;
+    font-size: 3rem;
+  }
+
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(1px);
+  }
+}
