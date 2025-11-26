@@ -26,6 +26,10 @@ body {
   transition: all 0.3s ease-in;
 }
 
+.box a {
+  text-decoration: none;
+}
+
 #destination1 {
   background: url("../assets/img/destinationImage/destination1.jpg") center
     center;
