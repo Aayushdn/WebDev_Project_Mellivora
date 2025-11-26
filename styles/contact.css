@@ -3,7 +3,7 @@
 
 // TODO: seperate contact styles from about styles
 
-body {
+#contactBody {
   font-family: "Open Sans";
   max-width: 1600px;
   color: black;

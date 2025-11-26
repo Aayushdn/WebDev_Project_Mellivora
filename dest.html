@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/dest.css" />
+    <title>Dest Page</title>
+    <script src="./scripts/destPage.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navBar">
+        <ul class="navList">
+          <li class="navItems"><a href="./index.html">Home</a></li>
+          <li class="navItems"><a href="./about.html">About</a></li>
+          <li class="navItems"><a href="./contact.html">Contact </a></li>
+        </ul>
+      </nav>
+
+      <div class="content">
+        <div class="left">
+          <h1 class="title">St Anton</h1>
+          <p class="desc">
+            Located in the heart of the Tyrolean Alps, St. Anton is one of the
+            world’s most famous ski destinations. It offers 85 cable cars and
+            ski lifts, along with an impressive 305 kilometres of ski slopes for
+            all levels. St. Anton is also known as the birthplace of modern
+            skiing, home to the first ski school founded by Hannes Schneider in
+            1921.,
+          </p>
+          <p class="details">
+            <span class="elevation">
+              <svg
+                viewBox="0 0 24 24"
+                id="Flat_Color"
+                data-name="Flat Color"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#ffffff"
+                stroke="#ffffff"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    id="primary"
+                    d="M21.89,17.55,16.13,6.18h0a2.09,2.09,0,0,0-3.76,0L10.5,9.86,9.87,8.49a2,2,0,0,0-1.8-1.2h0A2,2,0,0,0,6.25,8.48l-4.16,9.1a1,1,0,0,0,.07,1A1,1,0,0,0,3,19H21a1,1,0,0,0,.89-1.45Z"
+                    style="fill: #ffffff"
+                  ></path>
+                </g>
+              </svg>
+              <span>4000 m</span>
+            </span>
+            <span class="location">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                stroke="#ffffff"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z"
+                    stroke="#ffffff"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z"
+                    stroke="#ffffff"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </g>
+              </svg>
+              <span>Austria</span>
+            </span>
+          </p>
+        </div>
+        <div class="right">
+          <div class="carousel">
+            <div class="imagesList">
+              <img
+                src="./assets/img/destinationImage/destination1.jpg"
+                class="carouselItem"
+                alt=""
+              />
+              <img
+                src="./assets/img/destinationImage/destination2.jpg"
+                class="carouselItem"
+                alt=""
+              />
+              <img
+                src="./assets/img/destinationImage/destination3.jpg"
+                class="carouselItem"
+                alt=""
+              />
+            </div>
+            <div class="controls">
+              <span id="imagePrev"><</span>
+              <span id="imageNxt">></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="overlay"></div>
+    </div>
+  </body>
+</html>
