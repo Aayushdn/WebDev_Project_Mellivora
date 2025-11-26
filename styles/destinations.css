@@ -4,6 +4,10 @@ body {
   width: 100%;
 }
 
+.navBar a {
+  color: black;
+}
+
 .container {
   display: flex;
   width: 100%;
