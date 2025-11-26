@@ -5,6 +5,7 @@ body {
   font-family: "Inter";
   max-width: 1600px;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 .main {
@@ -13,10 +14,12 @@ body {
   margin-bottom: 10px;
   position: relative;
   padding: 40px 0;
+  height: 100vh;
 }
 
 .content {
   position: relative;
+  text-align: center;
   height: 100%;
   width: 100x %;
   z-index: 1;
@@ -125,4 +128,18 @@ body {
   position: absolute;
   bottom: -30px;
   right: -30px;
+}
+
+@media (max-width: 600px) {
+  .content {
+    text-align: center;
+    padding: 30px;
+  }
+
+  .stories {
+    padding: 0px;
+  }
+  .storyBox {
+    padding: 10px 10px 60px 10px;
+  }
 }
