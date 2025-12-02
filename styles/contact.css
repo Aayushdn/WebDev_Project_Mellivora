@@ -50,8 +50,11 @@
 }
 
 .formGroup #message {
-  padding: 20px 20px 20px 10px;
+  padding: 10px 30px 10px 5px;
+  outline: none;
+  border: 1px solid gray;
   border-radius: 10px;
+  font-family: inherit;
 }
 
 .formBtn {
