@@ -10,6 +10,7 @@ errorText.textContent = "";
 console.log(errorText);
 
 function displayErrorAsList(errorArray) {
+  errorText.style.color = "red";
   errorText.textContent = "";
   errorArray.forEach((element) => {
     const li = document.createElement("li");
@@ -46,7 +47,9 @@ submitButton.addEventListener("click", function (e) {
   }
   if (errors.length > 0) {
     //  errorText.textContent = errors.join("&nbsp");
+    errorText.setAttribute("tabindex", "-1");
     displayErrorAsList(errors);
+    errorText.focus();
   } else {
     errorText.style.color = "green";
     errorText.textContent = "Your message has been sent!";
