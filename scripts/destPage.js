@@ -9,6 +9,10 @@ const data = {
       elevation: {
         summit_m: 2811,
       },
+      images: {
+        background: "../assets/img/destinationImage/destination1BG.jpg",
+        carousel: [],
+      },
     },
     {
       id: "patagonia",
@@ -18,6 +22,10 @@ const data = {
         "Located in Argentina’s Nahuel Huapi National Park, just 19 kilometres from the city of San Carlos de Bariloche, Catedral Alta Patagonia is one of South America’s premier ski resorts. It features 120 kilometres of ski slopes and over 30 ski lifts, offering something for every skill level. The slopes are divided into 35% beginner, 45% intermediate, and 20% advanced or expert runs, making it an ideal destination for all types of skiers.",
       elevation: {
         summit_m: 2180,
+      },
+      images: {
+        background: "../assets/img/destinationImage/patagoniaBG.jpg",
+        carousel: [],
       },
     },
     {
@@ -29,6 +37,10 @@ const data = {
       elevation: {
         summit_m: 1200,
       },
+      images: {
+        background: "../assets/img/destinationImage/nisekoBG.jpg",
+        carousel: [],
+      },
     },
     {
       id: "aspen",
@@ -39,15 +51,23 @@ const data = {
       elevation: {
         summit_m: null,
       },
+      images: {
+        background: "../assets/img/destinationImage/aspenBG.jpg",
+        carousel: [],
+      },
     },
     {
       id: "kalinchowk",
-      name: "Kalinchowk–Kuri Ski Resort",
+      name: "Kalinchowk–Kuri",
       country: "Nepal",
       description:
         "Kalinchowk–Kuri Ski Resort, located in the Dolakha District of Nepal, offers a unique Himalayan skiing experience surrounded by breathtaking mountain scenery. The resort features natural alpine terrain with a blend of open meadows and ridgeline slopes, making it ideal for backcountry and introductory skiing. Though still developing, it has become a popular destination for local ski training and winter tourism. Notably, it is home to Nepal’s first rope-tow ski lift, installed by the Ski and Snowboard Federation of Nepal (SSFN), marking a milestone in the country’s growing ski culture.",
       elevation: {
         summit_m: 3842,
+      },
+      images: {
+        background: "../assets/img/destinationImage/kalinchowkBG.jpg",
+        carousel: [],
       },
     },
   ],
@@ -56,3 +76,22 @@ const data = {
 const params = new URLSearchParams(document.location.search);
 
 const param1 = params.get("d");
+
+const destContainer = document.querySelector(".container");
+const destName = document.querySelector("#destName");
+const destDesc = document.querySelector("#destDesc");
+const destElevation = document.querySelector("#destElevation");
+const destCountry = document.querySelector("#destCountry");
+console.log(destName);
+
+function displayDestination(id) {
+  const dest = data.destinations.find((dest) => dest.id == id);
+  console.log(destElevation, destCountry, dest);
+  destName.textContent = dest.name;
+  destContainer.style.backgroundImage = `url(${dest.images.background})`;
+  destDesc.textContent = dest.description;
+  destElevation.textContent = dest.elevation.summit_m;
+  destCountry.textContent = dest.country;
+}
+
+displayDestination(param1);

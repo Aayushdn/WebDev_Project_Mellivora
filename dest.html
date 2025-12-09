@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/dest.css" />
     <title>Dest Page</title>
-    <script src="./scripts/destPage.js"></script>
+    <script src="./scripts/destPage.js" defer></script>
   </head>
   <body>
     <div class="container">
@@ -14,13 +14,23 @@
           <li class="navItems"><a href="./index.html">Home</a></li>
           <li class="navItems"><a href="./about.html">About</a></li>
           <li class="navItems"><a href="./contact.html">Contact </a></li>
+          <li class="navItems">
+            <a href="./destinations.html">Destinations </a>
+          </li>
         </ul>
       </nav>
 
+      <div class="pagination">
+        <div class="dot active" id="dot1"><div class="circle"></div></div>
+        <div class="dot" id="dot2"><div class="circle"></div></div>
+        <div class="dot" id="dot3"><div class="circle"></div></div>
+        <div class="dot" id="dot4"><div class="circle"></div></div>
+        <div class="dot" id="dot4"><div class="circle"></div></div>
+      </div>
       <div class="content">
         <div class="left">
-          <h1 class="title">St Anton</h1>
-          <p class="desc">
+          <h1 class="title" id="destName">St Anton</h1>
+          <p class="desc" id="destDesc">
             Located in the heart of the Tyrolean Alps, St. Anton is one of the
             world’s most famous ski destinations. It offers 85 cable cars and
             ski lifts, along with an impressive 305 kilometres of ski slopes for
@@ -52,7 +62,7 @@
                   ></path>
                 </g>
               </svg>
-              <span>4000 m</span>
+              <span id="destElevation">4000 m</span>
             </span>
             <span class="location">
               <svg
@@ -84,7 +94,7 @@
                   ></path>
                 </g>
               </svg>
-              <span>Austria</span>
+              <span id="destCountry">Austria</span>
             </span>
           </p>
         </div>

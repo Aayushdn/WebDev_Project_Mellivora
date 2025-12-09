@@ -17,8 +17,7 @@ body {
 
 .container {
   height: 100vh;
-  background: url("../assets/img/destinationImage/destination1BG.jpg") center
-    center no-repeat;
+  background: center center no-repeat;
   background-size: cover;
   position: relative;
   z-index: 2;
@@ -35,6 +34,31 @@ body {
   background: rgb(0, 0, 0, 0.4);
 }
 
+.pagination {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: absolute;
+  margin: 0 20px;
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.dot .circle {
+  height: 15px;
+  width: 15px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.dot.active {
+  border: 2px solid #fbfbfe;
+  border-radius: 50%;
+}
+
 .content {
   position: relative;
   z-index: 1;
@@ -45,7 +69,7 @@ body {
 }
 
 .title {
-  font-size: 5rem;
+  font-size: 3rem;
   color: white;
   text-transform: uppercase;
 }
