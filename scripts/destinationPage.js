@@ -1,18 +1,15 @@
-const destinationContainer = document.querySelector(".container");
+const boxes = document.querySelectorAll(".box");
 
-console.log(destinationContainer);
-destinationContainer.addEventListener("mouseover", function (e) {
-  if (e.target.classList.contains("overlay")) {
-    e.target.classList.add("hidden");
-    const closestBox = e.target.closest(".box");
-    closestBox.style.flexGrow = "3";
-  }
-});
+boxes.forEach((box) => {
+  const overlay = box.querySelector(".overlay");
 
-destinationContainer.addEventListener("mouseout", (e) => {
-  if (e.target.classList.contains("overlay")) {
-    e.target.classList.remove("hidden");
-    const closestBox = e.target.closest(".box");
-    closestBox.style.flexGrow = "1";
-  }
+  box.addEventListener("mouseenter", () => {
+    if (overlay) overlay.classList.add("hidden");
+    box.style.flexGrow = "3";
+  });
+
+  box.addEventListener("mouseleave", () => {
+    if (overlay) overlay.classList.remove("hidden");
+    box.style.flexGrow = "1";
+  });
 });

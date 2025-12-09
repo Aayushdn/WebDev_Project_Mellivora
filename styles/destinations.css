@@ -63,14 +63,17 @@ body {
   top: 0;
   left: 0;
   z-index: 1;
-
   cursor: pointer;
+
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(1px);
+  opacity: 1;
+  transition: opacity 0.2s ease;
 }
 
 .overlay.hidden {
-  /* height: 0; */
-  background-color: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(0px);
+  opacity: 0;
+  pointer-events: none;
 }
 
 .content {
