@@ -10,7 +10,7 @@ const data = {
         summit_m: 2811,
       },
       images: {
-        background: "../assets/img/destinationImage/destination1BG.jpg",
+        background: "./assets/img/destinationImage/destination1BG.jpg",
         carousel: [],
       },
     },
@@ -24,7 +24,7 @@ const data = {
         summit_m: 2180,
       },
       images: {
-        background: "../assets/img/destinationImage/patagoniaBG.jpg",
+        background: "./assets/img/destinationImage/patagoniaBG.jpg",
         carousel: [],
       },
     },
@@ -38,7 +38,7 @@ const data = {
         summit_m: 1200,
       },
       images: {
-        background: "../assets/img/destinationImage/nisekoBG.jpg",
+        background: "./assets/img/destinationImage/nisekoBG.jpg",
         carousel: [],
       },
     },
@@ -52,7 +52,7 @@ const data = {
         summit_m: null,
       },
       images: {
-        background: "../assets/img/destinationImage/aspenBG.jpg",
+        background: "./assets/img/destinationImage/aspenBG.jpg",
         carousel: [],
       },
     },
@@ -66,7 +66,7 @@ const data = {
         summit_m: 3842,
       },
       images: {
-        background: "../assets/img/destinationImage/kalinchowkBG.jpg",
+        background: "./assets/img/destinationImage/kalinchowkBG.jpg",
         carousel: [],
       },
     },
@@ -74,24 +74,70 @@ const data = {
 };
 
 const params = new URLSearchParams(document.location.search);
-
 const param1 = params.get("d");
+let active = 1;
 
 const destContainer = document.querySelector(".container");
 const destName = document.querySelector("#destName");
 const destDesc = document.querySelector("#destDesc");
 const destElevation = document.querySelector("#destElevation");
 const destCountry = document.querySelector("#destCountry");
-console.log(destName);
+const paginationBox = document.querySelector(".pagination");
+const paginationDot = document.querySelectorAll(".dot");
 
 function displayDestination(id) {
   const dest = data.destinations.find((dest) => dest.id == id);
   console.log(destElevation, destCountry, dest);
   destName.textContent = dest.name;
+  paginationDot.forEach((dot) => {
+    dot.classList.remove("active");
+  });
+  if (active < data.destinations.length) {
+    paginationDot[active].classList.add("active");
+  }
+
   destContainer.style.backgroundImage = `url(${dest.images.background})`;
   destDesc.textContent = dest.description;
   destElevation.textContent = dest.elevation.summit_m;
   destCountry.textContent = dest.country;
 }
 
-displayDestination(param1);
+switch (param1) {
+  case "anton":
+    active = 0;
+    displayDestination(param1);
+    break;
+  case "patagonia":
+    active = 1;
+    displayDestination(param1);
+    break;
+  case "niseko":
+    active = 2;
+    displayDestination(param1);
+    break;
+  case "aspen":
+    active = 3;
+    displayDestination(param1);
+    break;
+  case "kalinchowk":
+    active = 4;
+    displayDestination(param1);
+    break;
+
+  default:
+    active = 1;
+    displayDestination("anton");
+    break;
+}
+
+paginationBox.addEventListener("click", function (e) {
+  const target = e.target;
+
+  if (target.classList.contains("circle")) {
+    const id = target.parentNode.id.split("").pop();
+    active = id - 1;
+    const dest = data.destinations[active];
+    params.set("d", dest.id);
+    displayDestination(dest.id);
+  }
+});
